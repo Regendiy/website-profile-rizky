@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profil Rizky</title>
+  <style>
+    :root {
+      --bg-color: #f4f4f4;
+      --text-color: #333;
+      --accent-color: #0078D7;
+      --card-bg: white;
+    }
+
+    body.dark-mode {
+      --bg-color: #1e1e1e;
+      --text-color: #f4f4f4;
+      --card-bg: #2c2c2c;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    header {
+      background-color: var(--accent-color);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .toggle-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: white;
+      color: var(--accent-color);
+      border: none;
+      padding: 10px 15px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .toggle-btn:hover {
+      background: #e0e0e0;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: var(--card-bg);
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+
+    h2 {
+      color: var(--accent-color);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ddd;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5em;
+      }
+      .toggle-btn {
+        top: 10px;
+        right: 10px;
+        padding: 8px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<button class="toggle-btn" onclick="toggleDarkMode()">🌙 Mode Gelap</button>
+
+<header>
+  <h1>Halo, Saya Rizky</h1>
+  <p> </p> Pembuat Web ini | Kreatif & Kolaboratif</p>
+</header>
+
+<section>
+  <h2>🧑 Tentang Saya</h2>
+  <p>Saya Rizky M Surya, seorang siswa di SMKN 7 Batam</p>
+</section>
+
+
+<section>
+  <h2>🎓 Pendidikan</h2>
+  <ul>
+    <li>[SMKN 7 Batam]</strong> – Jurusan: [Rekayasa Perangkat Lunak] (Tahun: 2025)</li>
+  </ul>
+</section>
+
+
+<section>
+  <h2>📞 Kontak</h2>
+  <ul>
+    <li>Email: rizkymsur@email.com</li>
+    <li>NO.WA: +6287764186491</a></li>
+    <li>Instagram: <a href="https://instagram.com/irkyzz" target="_blank">@irkyzz</a></li>
+    <li>Lokasi: Batam, Indonesia</li>
+  </ul>
+</section>
+
+<footer>
+  &copy; 2025 Rizky. Dibuat dengan semangat dan secangkir kopi ☕
+</footer>
+
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+  }
+</script>
+
+</body>
+</html>
